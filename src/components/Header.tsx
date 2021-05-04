@@ -9,6 +9,7 @@ const Header: React.FC = () => {
       w="100%"
       h="24"
       maxW={1440}
+      minH="100px"
       mx="auto"
       px="6"
       align="center"
