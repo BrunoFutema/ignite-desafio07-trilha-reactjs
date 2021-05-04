@@ -1,4 +1,5 @@
 /*.js
 **/*.d.ts
+/src/setupTests.ts
 node_modules
 build
