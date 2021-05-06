@@ -1,9 +1,18 @@
 import React from 'react';
 import Head from 'next/head';
 import { Flex, Image, Text } from '@chakra-ui/react';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+} from 'swiper/core';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Header } from '../components/Header';
 import { Banner } from '../components/Banner';
+
+SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard]);
 
 const Home: React.FC = () => {
   return (
@@ -86,6 +95,120 @@ const Home: React.FC = () => {
             <br />
             Então escolha seu continente
           </Text>
+        </Flex>
+
+        <Flex as="section" w="100%" py="16" align="center" justify="center">
+          <Swiper cssMode navigation pagination mousewheel keyboard>
+            <SwiperSlide>
+              <Flex position="relative">
+                <Flex
+                  position="absolute"
+                  w="100%"
+                  h="100%"
+                  direction="column"
+                  align="center"
+                  justify="center"
+                >
+                  <Text fontSize="32" fontWeight="bold" color="#F5F8FA">
+                    Europa
+                  </Text>
+
+                  <Text fontSize="18" fontWeight="bold" color="#DADADA">
+                    O continente mais antigo.
+                  </Text>
+                </Flex>
+                <img src="/european.png" alt="Europa" />
+              </Flex>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Flex position="relative">
+                <Flex
+                  position="absolute"
+                  w="100%"
+                  h="100%"
+                  direction="column"
+                  align="center"
+                  justify="center"
+                >
+                  <Text fontSize="32" fontWeight="bold" color="#F5F8FA">
+                    Europa
+                  </Text>
+
+                  <Text fontSize="18" fontWeight="bold" color="#DADADA">
+                    O continente mais antigo.
+                  </Text>
+                </Flex>
+                <img src="/european.png" alt="Europa" />
+              </Flex>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Flex position="relative">
+                <Flex
+                  position="absolute"
+                  w="100%"
+                  h="100%"
+                  direction="column"
+                  align="center"
+                  justify="center"
+                >
+                  <Text fontSize="32" fontWeight="bold" color="#F5F8FA">
+                    Europa
+                  </Text>
+
+                  <Text fontSize="18" fontWeight="bold" color="#DADADA">
+                    O continente mais antigo.
+                  </Text>
+                </Flex>
+                <img src="/european.png" alt="Europa" />
+              </Flex>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Flex position="relative">
+                <Flex
+                  position="absolute"
+                  w="100%"
+                  h="100%"
+                  direction="column"
+                  align="center"
+                  justify="center"
+                >
+                  <Text fontSize="32" fontWeight="bold" color="#F5F8FA">
+                    Europa
+                  </Text>
+
+                  <Text fontSize="18" fontWeight="bold" color="#DADADA">
+                    O continente mais antigo.
+                  </Text>
+                </Flex>
+                <img src="/european.png" alt="Europa" />
+              </Flex>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Flex position="relative">
+                <Flex
+                  position="absolute"
+                  w="100%"
+                  h="100%"
+                  direction="column"
+                  align="center"
+                  justify="center"
+                >
+                  <Text fontSize="32" fontWeight="bold" color="#F5F8FA">
+                    Europa
+                  </Text>
+
+                  <Text fontSize="18" fontWeight="bold" color="#DADADA">
+                    O continente mais antigo.
+                  </Text>
+                </Flex>
+                <img src="/european.png" alt="Europa" />
+              </Flex>
+            </SwiperSlide>
+          </Swiper>
         </Flex>
       </Flex>
     </Flex>
